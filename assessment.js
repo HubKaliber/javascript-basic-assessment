@@ -21,9 +21,9 @@ var bob = {
 	hair: {
 		style: 'spikey',
 		color: 'brown'
-	}
-	presidentOfTheUnitedStates: false;
-	likes: ['apples', 'bananas', 'cherries'];
+	},
+	presidentOfTheUnitedStates: false,
+	likes: ['apples', 'bananas', 'cherries']
 }
 
 
