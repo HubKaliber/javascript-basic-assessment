@@ -89,14 +89,15 @@ var secondHero = heroes.splice(2, 1);
 //['spongebob', 'batman', 'flash', 'wonderwoman']
 
 // leave batman in the array but put a copy of him on a variable called thirdHero
-var thirdHero = heroes.slice(1, 1);
+var batman = heroes.slice(1);
+var thirdHero = batman[0];
 //['spongebob', 'batman', 'wonderwoman']
 
 // #9 Write a function called addItem that takes in an array and an item, adds the item to
 // the array, and returns the array with the added item.
-function addItem(arr, x) {
-	arr = arr.push(x);
-	return arr;
+function addItem(array, item){
+	array.push(item);
+	eturn array;
 }
 
 // #10 Write a function called removeItem that takes in an array of strings, and a string.
