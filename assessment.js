@@ -113,47 +113,39 @@ function removeItem(arr, str){
 
 // Removes all instances of that string from the array. And return the modified array.
 // The order of the array should not be changed
-function removeItem(arr, x) {
-	var count = arr.length;
-	for(x in arr) {
-		if (arr[count] === x) {
-			delete arr[count];
-		};
-	};
-	return arr;
-}
 
 // #11 Write a function  called doubleTheFun that takes 1 parameter. It should double numbers, and
 // repeats strings. example 4->8, 2.5->5, 'Awesome'->'AwesomeAwesome'
-function doubleTheFun(onePar) {
-	if(typeof onePar == 'string') {
-		onePar = onePar + onePar;
-	} else {
-		onePar = onePar * 2;
-	};
-	return onePar;
+function removeItem(arr, str){
+	var newArr = [];
+	for (var i = 0; i < arr.length; i++){
+		if (arr[i] !== str){
+			newArr.push(arr[i]);
+		}
+	}
+	return newArr;
 }
 
 // #12 Write function getValueOfProperty that takes in an object, and the name of a property on the object
 // return the value from the object that corresponds to the property
-function getValueOfProperty(obj, objName) {
-	for (var prop in obj) {
-		var value = obj[objName];
-	};
-	return value;
+function getValueOfProperty(obj, key){
+	for (var prop in obj){
+	  var value = obj[key];
+	  return value;
+	}
 }
 
 // #13 Write a function called makeChatMessage that takes in a message and author as parameters
 // and returns an object with a message, author, and timestamp, that is
 // the current time as a Date object
-function makeChatMessage(msg, authName) {
-	var makeChat = {
-		message: 'message',
-		author: 'author',
-		date: Date()
+function makeChatMessage(message, author){
+	var chatMessage = {
+	  'message': message,
+	  'author': author,
+	  'timestamp': new Date()
 	};
-	return makeChat;
-}
+	return chatMessage;
+  }
 
 // #14 Create a function called coderTest that takes in an object that is a person.
 //It looks to see if the person’s name is Jeremy and then changes the person object to have a
