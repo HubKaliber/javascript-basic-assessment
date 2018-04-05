@@ -18,13 +18,11 @@ var iLoveCode = iLove + ' code';
 var bob = {
 	height: '6ft',
 	age: 24,
-	hair: {
-		style: 'spikey',
-		color: 'brown'
-	},
+	hair: { style: 'spikey',
+          color: 'brown'},
 	presidentOfTheUnitedStates: false,
 	likes: ['apples', 'bananas', 'cherries']
-}
+};
 
 
 // #4 Change my shirt color to pink using dot notation
