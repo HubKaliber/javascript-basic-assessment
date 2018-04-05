@@ -17,7 +17,7 @@ var iLoveCode = iLove + ' code';
 // bob likes apples, bananas, and cherries (array of strings)
 var bob = {
 	height: '6ft',
-	age: '24',
+	age: 24,
 	hair: {
 		style: 'spikey',
 		color: 'brown'
@@ -45,10 +45,10 @@ myOtherShirt['type'] = 'spandex';
 // The key should be the animal name(string) and the value should be how many there are.
 // Our zoo has 8 monkeys, 4 giraffes and 2 elephants
 var zoo = {
-	monkeys: '8',
-	giraffes: '4',
-	elephants: '2'
-}
+	monkeys: 8,
+	giraffes: 4,
+	elephants: 2
+};
 
 
 // #6 Loop through this object and change all keys that start with the letter s to have a value of 's'
