@@ -97,12 +97,18 @@ var thirdHero = batman[0];
 // the array, and returns the array with the added item.
 function addItem(array, item){
 	array.push(item);
-	eturn array;
+	return array;
 }
 
 // #10 Write a function called removeItem that takes in an array of strings, and a string.
-function removeItem(arr, x) {
-
+function removeItem(arr, str){
+	var newArr = [];
+	for (var i = 0; i < arr.length; i++){
+		if (arr[i] !== str){
+			newArr.push(arr[i]);
+		}
+	}
+	return newArr;
 }
 
 // Removes all instances of that string from the array. And return the modified array.
