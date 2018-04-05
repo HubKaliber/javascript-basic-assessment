@@ -116,14 +116,13 @@ function removeItem(arr, str){
 
 // #11 Write a function  called doubleTheFun that takes 1 parameter. It should double numbers, and
 // repeats strings. example 4->8, 2.5->5, 'Awesome'->'AwesomeAwesome'
-function removeItem(arr, str){
-	var newArr = [];
-	for (var i = 0; i < arr.length; i++){
-		if (arr[i] !== str){
-			newArr.push(arr[i]);
-		}
+function doubleTheFun(param){
+	var a = param;
+	if (isNaN(param)){
+		return param + param;
+	} else {
+	return parseFloat(a) + parseFloat(a);
 	}
-	return newArr;
 }
 
 // #12 Write function getValueOfProperty that takes in an object, and the name of a property on the object
